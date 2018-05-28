@@ -1,0 +1,36 @@
+
+<html>
+<head>
+	<title>App Electron</title>
+</head>
+<body>
+	<h1>Hola Mundo!!<h1>
+	<p id="content"></p>
+	<button id="new-window">Crear nueva ventana</button><br/>
+	<script>
+		const {BrowserWindow} = require('electron').remote
+		const { readFile } = require('fs');
+		const path = require('path');
+		const { resolve } = require('path');
+
+		readFile(resolve(`${__dirname}/packagename.json`), 'utf8', (error, data) => {
+			if (error){
+				console.error(error);
+				return error;
+			}
+
+			return document.getElementById("content").innerHTML = data;
+		});
+
+		const newWindowBtn = document.getElementById('new-window')
+		newWindowBtn.addEventListener('click', (event) => {
+			const modalPath = path.join('file://', __dirname, 'modal.html');
+			let win = new BrowserWindow({ width: 400, height: 320})
+
+			win.on('close', () => {win = null})
+			win.loadURL(modalPath)
+			win.show()
+		});
+	</script>
+</body>
+</html>
