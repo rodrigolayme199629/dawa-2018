@@ -1,0 +1,11 @@
+Conclusiones y observaciones:
+
+- La expresión de función flecha tiene una sintaxis más corta que una expresión de función convencional y no vincula sus propios this, arguments, super, o new.target. 
+- Son funciones no relacionadas con métodos y no pueden ser usadas como constructores.
+- Las funciones de flecha no tienen su propio objeto arguments.
+en todo proyecto moderno de JavaScript es posible separar el código entre múltiples archivos JavaScript, llamados módulos.
+- Es recomendable mantener cada uno de los archivos o módulo administrable y enfocado a solucionar un problema.
+- Es necesario exportar e importar un archivo para poder acceder a las funcionalidades.
+- Si el argumento es cualquier otro número, una excepción del tipo RangeError es lanzada.
+- Un array de JavaScript es inicializado con los elementos dados, exceptuando el caso cuando un solo argumento es dado al constructor del objeto Array y ese objeto es un número. Hay que tener en cuenta que es solo en casos especiales se aplica a los arrays de JavaScript creados con el constructor Array, no con arrays literales creados con la sintaxis de paréntesis.
+- para la creación de un proyecto en reactJS se nos da dos opciones para crear el proyecto.
