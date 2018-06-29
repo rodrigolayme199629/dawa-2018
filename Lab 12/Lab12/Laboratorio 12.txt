@@ -1,0 +1,22 @@
+
+Carlos Escalante Menauth Grupo "A"
+
+-----------------------------------------------------------------------------
+
+3.5 --> (Imagen 01)
+7.12 --> (Imagen 02), (Imagen 03)
+
+Creando usuario con metodo SIGNUP con Postman --> (Imagen Creando usuario Postman)
+Verificando contraseñas encriptadas en base de datos --> (Imagen Contraseña encriptada)
+Usuarios creados con Postman --> (Imagen Usuarios Postman)
+
+OBSERVACIONES Y CONCLUSIONES:
+
+• Creamos usuarios para nuestra base de datos, por medio de metodo Post-SignUp en Postman.
+• Logramos realizar una autentificacion y validacion de usuario utilizando Express, React y Moongose, pudiendo
+  interactuar entre si.
+• En el desarrollo del laboratorio, trabajamos con una api desarrollada por nosotros mismos, y 
+  accedimos a ella mediante Postman, y sus distintos metodos.
+• Para poder lograr la conexion entre nuestra aplicacion de React y el servidor Express, utilizamos una instancia axios, 
+  donde declaramos la ruta con la que se trabajara.
+
